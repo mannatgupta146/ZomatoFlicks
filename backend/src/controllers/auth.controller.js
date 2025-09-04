@@ -51,6 +51,30 @@ async function loginUser(req,res){
             message: "Invalid email or password"
         })
     }
+
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+
+    if (!isPasswordValid) {
+        return res.status(400).json({
+            message: "Invalid email or password"
+        });
+    }
+
+
+    const token = jwt.sign({
+        id: user._id
+    },"23e622b9c523acd64890f024cbe1e255")
+
+    res.cookie("token", token)
+
+    res.status(200).json({
+        message: "User logged in sucessfully",
+        user:{
+            _id: user._id,
+            email: user.email,
+            fullName: user.fullName
+        }
+    })
 }
 
 module.exports = {
