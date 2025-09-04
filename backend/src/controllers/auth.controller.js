@@ -39,7 +39,19 @@ async function registerUser(req,res){
     })
 }
 
-async function loginUser(req,res){}
+async function loginUser(req,res){
+    const {email, password} = req.body;
+
+    const user = await userModel.findOne({
+        email
+    })
+
+    if(!user){
+        res.status(400).json({
+            message: "Invalid email or password"
+        })
+    }
+}
 
 module.exports = {
     registerUser,
