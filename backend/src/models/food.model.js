@@ -9,10 +9,6 @@ const foodSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    name:{
-        type: String,
-        required: true
-    },
     description:{
         type: String
     },
@@ -24,4 +20,4 @@ const foodSchema = new mongoose.Schema({
 
 const foodModel = mongoose.model("food", foodSchema);
 
-module.export = foodModel;
+module.exports = foodModel;
