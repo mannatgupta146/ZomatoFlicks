@@ -1,7 +1,7 @@
 const foodPartnerModel = require('../models/foodPartner.model')
 const jwt = require('jsonwebtoken')
 
-async function foodPartnerMiddleware(req, res, next){
+async function authFoodPartnerMiddleware(req, res, next){
     const token = req.cookies.token;
     if(!token){
         return res.status(401).json({
@@ -23,4 +23,8 @@ async function foodPartnerMiddleware(req, res, next){
             message: "Invalid token"
         })
     }
+}
+
+module.exports = {
+   authFoodPartnerMiddleware
 }
