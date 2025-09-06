@@ -14,7 +14,7 @@ async function foodPartnerMiddleware(req, res, next){
 
         const foodPartner = await foodPartnerModel.findById(decoded.id)
 
-        res.foodPartner = foodPartner
+        req.foodPartner = foodPartner
         next()
     }
 
