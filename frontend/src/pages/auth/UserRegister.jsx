@@ -46,11 +46,11 @@ const UserRegister = () => {
                     <div className="two-col">
                         <div className="field-group">
                             <label htmlFor="firstName">First Name</label>
-                            <input id="firstName" name="firstName" placeholder="Mannat" autoComplete="given-name" />
+                            <input id="firstName" name="firstName" placeholder="John" autoComplete="given-name" />
                         </div>
                         <div className="field-group">
                             <label htmlFor="lastName">Last Name</label>
-                            <input id="lastName" name="lastName" placeholder="Gupta" autoComplete="family-name" />
+                            <input id="lastName" name="lastName" placeholder="Doe" autoComplete="family-name" />
                         </div>
                     </div>
                     <div className="field-group">
@@ -59,7 +59,7 @@ const UserRegister = () => {
                     </div>
                     <div className="field-group">
                         <label htmlFor="password">Password</label>
-                        <input id="password" name="password" type="password" placeholder="••••••••" autoComplete="new-password" />
+                        <input id="password" name="password" type="password" placeholder="Create password" autoComplete="new-password" />
                     </div>
                     <button className="auth-submit" type="submit">Sign Up</button>
                 </form>

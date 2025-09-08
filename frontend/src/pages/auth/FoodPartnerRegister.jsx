@@ -53,7 +53,7 @@ const FoodPartnerRegister = () => {
           <div className="two-col">
             <div className="field-group">
               <label htmlFor="contactName">Contact Name</label>
-              <input id="contactName" name="contactName" placeholder="Mannat Gupta" autoComplete="name" />
+              <input id="contactName" name="contactName" placeholder="John Doe" autoComplete="name" />
             </div>
             <div className="field-group">
               <label htmlFor="phone">Phone</label>
