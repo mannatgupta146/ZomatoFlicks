@@ -48,16 +48,16 @@ const FoodPartnerRegister = () => {
         <form className="auth-form" onSubmit={handleSubmit} noValidate>
           <div className="field-group">
             <label htmlFor="businessName">Business Name</label>
-            <input id="businessName" name="businessName" placeholder="Tasty Bites" autoComplete="organization" />
+            <input id="businessName" name="businessName" placeholder="Zomato Flicks" autoComplete="organization" />
           </div>
           <div className="two-col">
             <div className="field-group">
               <label htmlFor="contactName">Contact Name</label>
-              <input id="contactName" name="contactName" placeholder="Jane Doe" autoComplete="name" />
+              <input id="contactName" name="contactName" placeholder="Mannat Gupta" autoComplete="name" />
             </div>
             <div className="field-group">
               <label htmlFor="phone">Phone</label>
-              <input id="phone" name="phone" placeholder="+1 555 123 4567" autoComplete="tel" />
+              <input id="phone" name="phone" placeholder="+91 1234 567 890" autoComplete="tel" />
             </div>
           </div>
             <div className="field-group">

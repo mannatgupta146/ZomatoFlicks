@@ -46,11 +46,11 @@ const UserRegister = () => {
                     <div className="two-col">
                         <div className="field-group">
                             <label htmlFor="firstName">First Name</label>
-                            <input id="firstName" name="firstName" placeholder="Jane" autoComplete="given-name" />
+                            <input id="firstName" name="firstName" placeholder="Mannat" autoComplete="given-name" />
                         </div>
                         <div className="field-group">
                             <label htmlFor="lastName">Last Name</label>
-                            <input id="lastName" name="lastName" placeholder="Doe" autoComplete="family-name" />
+                            <input id="lastName" name="lastName" placeholder="Gupta" autoComplete="family-name" />
                         </div>
                     </div>
                     <div className="field-group">
