@@ -6,7 +6,7 @@ import UserLogin from '../pages/auth/UserLogin';
 import FoodPartnerRegister from '../pages/auth/FoodPartnerRegister';
 import FoodPartnerLogin from '../pages/auth/FoodPartnerLogin';
 import Home from '../pages/general/Home'
-import CreateFood from '../pages/general/CreateFood'
+import CreateFood from '../pages/food-partner/CreateFood'
 
 const AppRoutes = () => {
   return (

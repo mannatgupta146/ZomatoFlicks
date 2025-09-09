@@ -107,7 +107,7 @@ button.auth-submit {
   background: var(--color-accent);
   color: #fff;
   border: none;
-  padding: 16px 20px; /* bigger button */
+  padding: 14px 16px; /* bigger button */
   font: inherit;
   font-weight: 600;
   font-size: 1rem;
