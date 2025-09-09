@@ -1,11 +1,16 @@
 import React from 'react'
+
+import './App.css'
+import './styles/theme.css'
 import AppRoutes from './routes/AppRoutes'
 
-const App = () => {
+function App() {
+
+
   return (
-    <div>
-      <AppRoutes/>
-    </div>
+    <>
+      <AppRoutes />
+    </>
   )
 }
 

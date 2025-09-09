@@ -46,7 +46,7 @@ const UserRegister = () => {
                     <div className="two-col">
                         <div className="field-group">
                             <label htmlFor="firstName">First Name</label>
-                            <input id="firstName" name="firstName" placeholder="John" autoComplete="given-name" />
+                            <input id="firstName" name="firstName" placeholder="Jane" autoComplete="given-name" />
                         </div>
                         <div className="field-group">
                             <label htmlFor="lastName">Last Name</label>
@@ -59,7 +59,7 @@ const UserRegister = () => {
                     </div>
                     <div className="field-group">
                         <label htmlFor="password">Password</label>
-                        <input id="password" name="password" type="password" placeholder="Create password" autoComplete="new-password" />
+                        <input id="password" name="password" type="password" placeholder="••••••••" autoComplete="new-password" />
                     </div>
                     <button className="auth-submit" type="submit">Sign Up</button>
                 </form>
