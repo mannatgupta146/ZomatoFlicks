@@ -1,9 +1,13 @@
-const express = require('express')
-const foodPartnerController = require('../controllers/food-partner.controller')
-const authMiddleware = require('../middlewares/auth.middleware')
-const router = express.Router()
+const express = require('express');
+const foodPartnerController = require("../controllers/food-partner.controller");
+const authMiddleware = require("../middlewares/auth.middleware");
 
-/* GET /api/food-partner/:id*/
-router.get('/food-partner/:id',authMiddleware.authUserMiddleware, foodController.getFoodPartnerById)
+const router = express.Router();
 
-module.exports = router
+
+/* /api/food-partner/:id */
+router.get("/:id",
+    authMiddleware.authUserMiddleware,
+    foodPartnerController.getFoodPartnerById)
+
+module.exports = router;

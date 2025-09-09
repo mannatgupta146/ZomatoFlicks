@@ -1,33 +1,33 @@
-const mongoose = require('mongoose')
-const { request } = require('../app')
+const mongoose = require('mongoose');
 
 const foodPartnerSchema = new mongoose.Schema({
-    name:{
+    name: {
         type: String,
         required: true
     },
-    contactName:{
+    contactName: {
         type: String,
         required: true
     },
-    phone:{
+    phone: {
         type: String,
         required: true
     },
-    address:{
+    address: {
         type: String,
         required: true
     },
-    email:{
+    email: {
         type: String,
         required: true,
         unique: true
     },
-    password:{
-        type: String
-    },
+    password: {
+        type: String,
+        required: true
+    }
 })
 
-const foodPartnerModel = mongoose.model("foodPartner", foodPartnerSchema);
+const foodPartnerModel = mongoose.model("foodpartner", foodPartnerSchema);
 
 module.exports = foodPartnerModel;
