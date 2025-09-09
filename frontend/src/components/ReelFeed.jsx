@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ReelsFeed = () => {
+const ReelFeed = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const ReelsFeed = () => {
   )
 }
 
-export default ReelsFeed
+export default ReelFeed
